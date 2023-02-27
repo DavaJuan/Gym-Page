@@ -1,0 +1,75 @@
+:root{
+  --mainColor:#212121;
+  --mainColorLigth:#484848;
+  --mainColorDark: #000000;
+  --secondaryColor:#ff5722;
+  --secondaryLightColor:#ff8a50;
+  --secondaryDarkColor:#c41c00;
+  --primaryTextColor:#ffffff;
+  --secondaryTextColor:#000000;
+}
+
+.home-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+    url(./img/backgroundGym2.png) no-repeat center center;
+  background-size: cover; 
+}
+
+.home-container img{
+  width: 500px;
+  transition: 1s;
+}
+
+.home-container button{
+  width: 10rem;
+  margin: 10px;
+  font-size: 1.3rem;
+  padding: 15px;
+  border-radius: 6px;
+  background-color: var(--secondaryColor);
+  border: none;
+  color: var(--primaryTextColor);
+}
+
+.btn-link{
+  color: var(--primaryTextColor);
+}
+
+.home-container button:hover{
+  background-color: var(--secondaryDarkColor);
+  cursor: pointer;
+  transition: .6s;
+}
+
+
+@media only screen and (max-width: 900px){
+  .home-container{
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+    url(./img/backgroundMovile2.png) no-repeat center center;
+    background-size: cover;
+  }
+
+  .home-container img{
+    width: 400px;
+    transition: 1s;
+  }
+
+  .home-container button{
+    width: 8rem;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .home-container img{
+    width: 300px;
+    transition: 1s;
+  }
+  
+}

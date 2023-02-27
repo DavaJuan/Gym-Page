@@ -1,0 +1,114 @@
+:root{
+    --mainColor:#212121;
+    --mainColorLigth:#484848;
+    --mainColorDark: #000000;
+    --secondaryColor:#ff5722;
+    --secondaryLightColor:#ff8a50;
+    --secondaryDarkColor:#c41c00;
+    --primaryTextColor:#ffffff;
+    --secondaryTextColor:#000000;
+  }
+
+.planes{
+    height: 100vh;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+    url(../images/cards.png) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cards-planes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    margin: 10rem;
+    height: 65vh;
+    width: 70vw;
+  }
+  
+  .card{
+    /* background: #f12711;
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+    background: linear-gradient(to right, #f5af19, #f12711); */
+    background-color: var(--secondaryLightColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 30px;
+  }
+
+  .card-title{
+    font-size: 1.5rem;
+    color: var(--primaryTextColor);
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid var(--primaryTextColor);
+  }
+
+  .card h3{
+    font-size: 3rem;
+    padding: 1rem;
+    width: 100%;
+    color: var(--primaryTextColor);
+    background-color: var(--secondaryColor);
+    border-bottom: 1px solid var(--primaryTextColor)
+  }
+
+  .card-info{
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 1rem;
+    color: var(--primaryTextColor);
+  }
+
+  .card-info2{
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 1rem;
+    color: var(--primaryTextColor);
+  }
+
+  .btn-planes{
+    width: 15rem;
+    padding: .6rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondaryColor);
+    color: var(--primaryTextColor);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+
+  .btn-planes:hover{
+    cursor: pointer;
+    background-color: var(--primaryTextColor);
+    color: var(--mainColorDark);
+  }
+
+
+  /***************************************/
+
+  .card2{
+    background: #f12711;
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+    background: linear-gradient(to right, #f5af19, #f12711);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 30px;
+  }
+
+  .card2 h3{
+    font-size: 3rem;
+    padding: 1rem;
+    width: 100%;
+    color: var(--primaryTextColor);
+    background-color: var(--secondaryColor);
+    border-bottom: 1px solid var(--primaryTextColor)
+  }

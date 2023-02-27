@@ -1,0 +1,59 @@
+:root{
+  --mainColor:#212121;
+  --mainColorLigth:#484848;
+  --mainColorDark: #000000;
+  --secondaryColor:#ff5722;
+  --secondaryLightColor:#ff8a50;
+  --secondaryDarkColor:#c41c00;
+  --primaryTextColor:#ffffff;
+  --secondaryTextColor:#000000;
+}
+
+.scroll-text-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--mainColor);
+  color: var(--primaryTextColor);
+}
+
+.scroll-text-container div p{
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.scroll-text-container div h3{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--secondaryColor);
+}
+
+.scroll-text-container div h4{
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  color: var(--secondaryColor);
+}
+
+
+@media only screen and (max-width: 900px){
+  .scroll-text-container div p{
+    font-size: 1.2rem;
+    margin: 1rem;
+  }
+
+  .scroll-text-container div h3{
+    padding: 0 1rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: var(--secondaryColor);
+  }
+
+  .scroll-text-container div h4{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: var(--secondaryColor);
+  }
+}
